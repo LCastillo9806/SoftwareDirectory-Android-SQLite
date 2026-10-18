@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8FAFC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Título del formulario -->
+        <TextView
+            android:id="@+id/tvFormTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar empresa"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1E293B"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Descripción -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresa la información de la empresa"
+            android:textSize="14sp"
+            android:textColor="#64748B"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Nombre -->
+        <EditText
+            android:id="@+id/etCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Nombre de la empresa *"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Página web -->
+        <EditText
+            android:id="@+id/etWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Página web"
+            android:inputType="textUri"
+            android:singleLine="true"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Teléfono -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Correo electrónico -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Productos y servicios -->
+        <EditText
+            android:id="@+id/etServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:hint="Productos y servicios que ofrece"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:maxLines="4"
+            android:gravity="top"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Clasificación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clasificación de la empresa *"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E293B"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona una o varias categorías"
+            android:textSize="13sp"
+            android:textColor="#64748B"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Consultoría -->
+        <CheckBox
+            android:id="@+id/cbConsulting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Consultoría"
+            android:textSize="15sp"
+            android:textColor="#1E293B"
+            android:buttonTint="#2563EB"/>
+
+        <!-- Desarrollo a la medida -->
+        <CheckBox
+            android:id="@+id/cbCustomDevelopment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Desarrollo a la medida"
+            android:textSize="15sp"
+            android:textColor="#1E293B"
+            android:buttonTint="#2563EB"/>
+
+        <!-- Fábrica de software -->
+        <CheckBox
+            android:id="@+id/cbSoftwareFactory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Fábrica de software"
+            android:textSize="15sp"
+            android:textColor="#1E293B"
+            android:buttonTint="#2563EB"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Guardar o actualizar empresa -->
+        <Button
+            android:id="@+id/btnSaveCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Guardar empresa"
+            android:textAllCaps="false"
+            android:backgroundTint="#2563EB"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F8FAFC">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Software Directory"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#1E293B"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Directorio de empresas de software"
+        android:textSize="14sp"
+        android:textColor="#64748B"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar empresa por nombre"
+        android:inputType="text"
+        android:singleLine="true"
+        android:padding="12dp"/>
+
+
+    <Spinner
+        android:id="@+id/spClassification"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:minHeight="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <Button
+        android:id="@+id/btnAddCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar empresa"
+        android:textAllCaps="false"
+        android:backgroundTint="#2563EB"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empresas registradas"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#1E293B"
+        android:layout_marginBottom="12dp"/>
+
+    <ListView
+        android:id="@+id/lvCompanies"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#E2E8F0"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
+
